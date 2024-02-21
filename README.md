@@ -12,6 +12,7 @@ Each level of natas consists of its own website located at http://natasX.natas.l
 Each level has access to the password of the next level. Your job is to somehow obtain that next password and level up. All passwords are also stored in /etc/natas_webpass/. E.g. the password for natas5 is stored in the file /etc/natas_webpass/natas5 and only readable by natas4 and natas5.
 
 =============================================================================================================================================================================
+
 Natas Level 0
 =============================================================================================================================================================================
 Start here:
