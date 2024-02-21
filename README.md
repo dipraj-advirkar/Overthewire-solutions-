@@ -1,4 +1,4 @@
-# Overthewire-solutions-
+# Overthewire-solutions
 Project Name: Overthewire/wargames/natas
 =============================================================================================================================================================================
 Description
