@@ -29,7 +29,7 @@ You will get a pop-up fill there given credentials & go to inspect.
 
 There you will get commented password for natas1:
 
-"<!--The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 -->"
+"<!--The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 ->"
 
 ============================================================================================
 
@@ -48,7 +48,7 @@ Also you can use shortcut key that's "cntrl + shift + c" to view source code.
 
 And this is how you will get password for natas2.
 
-<!--The password for natas2 is h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7 -->
+"<!--The password for natas2 is h4ubbcXrWqsTo7GGnnUMLppXbOogfBZ7 ->"
 
 ============================================================================================
 
@@ -74,7 +74,7 @@ Open it there you will get natas3 password.
 ============================================================================================
 
 Natas Level 2 → Level 3
-=============================================================================================================================================================================
+========================
 Username: natas3
 URL:      http://natas3.natas.labs.overthewire.org
 
@@ -82,7 +82,7 @@ After entering credentials.
 Inspect the page and view source code. There you will get one hint.
 You will find hint. In commented form.
 
-"<!-- No more information leaks!! Not even Google will find it this time... -->"
+"<!-- No more information leaks!! Not even Google will find it this time... ->"
 
 They are saying not even google will find it this times means:
 Some are hidden directories are present there.
@@ -150,19 +150,19 @@ URL:      http://natas6.natas.labs.overthewire.org
 
 After entering credentials you will get a new page.
 
-Here, you have to click on "View sourcecode". In which you will see "includes/secret.inc" file on second line.
+Here, you have to click on "View sourcecode". In which you will see "includes/secret.inc" file on the second line.
 
-just copy that path and paste after url like this.
+just copy that path and paste it after URL like this.
 
 "natas6.natas.labs.overthewire.org/includes/secret.inc".
 
-and Inspect that page you will get secret
+and Inspect that page you will get a secret
 " <?
 $secret = "FOEIUWGHFEEUHOFUOIU";
 ?> "
 
 Enter that secret key in input and submit.
-You will get password for natas7 
+You will get the password for natas7 
 
 "Access granted. The password for natas7 is jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr"
 
@@ -181,11 +181,11 @@ There you get one hint:
 
 "<!-- hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->"
 
-Now, you have to do path traversal after url you have to add they given hint path to get password.
+Now, you have to do path traversal after url you have to add the given hint path to get the password.
 Like this, 
 "http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8"
 
-After that you will get password for next level natas8
+After that, you will get the password for the next level natas8
 
 "a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB "
 
