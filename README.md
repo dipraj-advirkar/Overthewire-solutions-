@@ -140,7 +140,94 @@ After forwarding this request you will get password of natas6 as
 
  Access granted. The password for natas6 is fOIvE0MDtPTgRhqmmvvAOt2EfXR6uQgR
 
-=============================================================================================================================================================================
+============================================================================================
+
+Natas Level 5 → Level 6
+============================================================================================
+
+Username: natas6
+URL:      http://natas6.natas.labs.overthewire.org
+
+After entering credentials you will get a new page.
+
+Here, you have to click on "View sourcecode". In which you will see "includes/secret.inc" file on second line.
+
+just copy that path and paste after url like this.
+
+"natas6.natas.labs.overthewire.org/includes/secret.inc".
+
+and Inspect that page you will get secret
+" <?
+$secret = "FOEIUWGHFEEUHOFUOIU";
+?> "
+
+Enter that secret key in input and submit.
+You will get password for natas7 
+
+"Access granted. The password for natas7 is jmxSiH3SP6Sonf8dv66ng8v1cIEdjXWr"
+
+============================================================================================
+
+Natas Level 6 → Level 7
+============================================================================================
+Username: natas7
+URL:      http://natas7.natas.labs.overthewire.org
+
+
+After entering credentials you will get a new page with two tabs.
+
+you have to first inspect home page.
+There you get one hint:
+
+"<!-- hint: password for webuser natas8 is in /etc/natas_webpass/natas8 -->"
+
+Now, you have to do path traversal after url you have to add they given hint path to get password.
+Like this, 
+"http://natas7.natas.labs.overthewire.org/index.php?page=/etc/natas_webpass/natas8"
+
+After that you will get password for next level natas8
+
+"a6bZCNYwdKqN5cGP11ZdtPg0iImQQhAB "
+
+============================================================================================
+
+Natas Level 7 → Level 8
+============================================================================================
+Username: natas8
+URL:      http://natas8.natas.labs.overthewire.org
+
+After entering credentials you will get a new page.
+
+You will get new page. In which you have to click on "View sourcecode".
+
+After viewing you will see encryption code for secret key.
+
+So, you need to decrypt the secret key.
+
+Use can you below given code for decryption.
+
+<?php
+function decodeSecret($secret){
+  return base64_decode(strrev(hex2bin($secret)));
+  }
+
+print decodeSecret("3d3d516343746d4d6d6c315669563362");
+
+?>
+
+Here, you compile php code online.
+"https://www.programiz.com/php/online-compiler/"
+
+After compilation you will get secret key.
+"oubWYf2kBq"
+
+Enter secret key in input box and submit.
+
+You will get password for natas9 as given below:
+
+Access granted. The password for natas9 is "Sda6t0vkOPkM8YeOZkAGVhFoaplvlJFd"
+
+============================================================================================
 
 Coming Soon....
 Happy Hacking :)
