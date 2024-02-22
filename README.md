@@ -16,7 +16,7 @@ Each level has access to the password of the next level. Your job is to somehow 
 
 
 Natas Level 0
-============================================================================================
+===================================================================================
 Start here:
 
 Username: natas0
@@ -29,7 +29,7 @@ You will get a pop-up fill there given credentials & go to inspect.
 
 There you will get commented password for natas1:
 
-<!--The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 -->
+"<!--The password for natas1 is g9D9cREhslqBKtcA2uocGHPfMZVzeFK6 -->"
 
 ============================================================================================
 
